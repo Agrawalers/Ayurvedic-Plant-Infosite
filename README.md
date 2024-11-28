@@ -45,13 +45,19 @@ The **Ayurvedic Plant Infosite** provides detailed information about various Ayu
 
 ### Screenshot
 Below is a screenshot of the Ayurvedic Plant Infosite:
-
+### Home Page
 ![Home Page](img/home_page.jpeg)  
+### Plant Info Page
 ![Plant Info](img/plant_info.jpeg)  
-![Plant Details](img/plant_details.jpeg)  
-![Remedy Section](img/remedy_section.jpeg)  
-![Disease Cure](img/disease_cure.jpeg)  
+### Plant Details Page
+![Plant Details](img/plant_details.jpeg) 
+### Remedy Page
+![Remedy Section](img/remedy_section.jpeg)
+### Disease Page
+![Disease Cure](img/disease_cure.jpeg) 
+### 3D view Page
 ![3D view](img/3d_view.jpeg)
+### Quiz Section Page
 ![Quiz Section](img/quiz_section.jpeg)
 ---
 
