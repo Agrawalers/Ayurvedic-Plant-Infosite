@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANTIFY</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- external js file -->
+     <script src="searchResult.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="custom-polygon"></div>
+    </div>
+    <nav>
+        <div class="logo">
+            <img src="logo-png_3-removebg-preview.png" alt="">
+            <!-- <h2>PLANTIFY</h2> -->
+        </div>
+        <ul>
+            <li style="border-bottom: 3px solid  rgb(255, 255, 255);"><a href="#" style="color: #fff;">Home</a></li>
+            <li><a href="#Remedies">Remedies</a></li>
+            <li id="Dailyquiz"><a href="#" >Daily Quiz</a></li>
+            <li><a href="#">Favorite</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="virtualGranden">
+        <h1 id="virLInk">Welcome to your Virtual Gardern</h1>
+        <marquee>Virtual garden will available soon , here is a prototype of virtual garden.......</marquee>
+        <video autoplay controls  loop>
+            <source src="./Assets/virtualGarden.mp4" >
+        </video>
+    </div>
+    <section>
+        <div class="aboutContainer">
+            <div class="textHeader">
+                <h2>Explore the Healing <br>World of Medicinal Plants</h2>
+                <span>Learn how to use these green treasures <br>for your well-being</span>
+            </div>
+            <div class="searchBox">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder=" Enter your plant" id="search-input">
+                <button onclick="searchPlant()" id="SearchBtn">Search</button>
+            </div>
+        </div>
+        <div class="baseImgcontainer">
+            <img src="base-removebg-preview.png" alt="">
+        </div>
+    </section>
+    <!-- Overlay and Popup -->
+    <div class="overlay" id="overlay" ></div>
+    <div class="popup" id="popup">
+        <h2>Popup Title</h2>
+        <p>This is a popup message.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <!-- overlay end here -->
+    <main>
+        <div class="slideContainer">
+            <div class="slides" id="aloverabox">
+                <div class="imgCntnr">
+                    <img src="alovera-removebg-preview.png" alt="">
+                </div>
+                <div class="imgData">
+                    <h2>ALOEVERA</h2>
+                    <P>Known for its soothing and healing properties, especially for skin burns and wound</P>
+                </div>
+                <a href="#">Buy now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="slides" id="curryLeavesbox">
+                <div class="imgCntnr">
+                    <img src="./Assets/curryLeaves2-removebg-preview.png" alt="">
+                </div>
+                <div class="imgData">
+                    <h2>Curry Leaves </h2>
+                    <P>Enhances digestion and is rich in antioxidants, promoting liver health.
+                    </P>
+                </div>
+                <a href="#">Buy now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="slides" id="tulsibox">
+                <div class="imgCntnr">
+                    <img src="./Assets/tulsi-removebg-preview.png" alt="">
+                </div>
+                <div class="imgData">
+                    <h2>Tulsi</h2>
+                    <P>A powerful adaptogen, Tulsi is used to reduce stress and enhance respiratory health.</P>
+                </div>
+                <a href="#">Buy now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="slides" id="peppermintBox">
+                <div class="imgCntnr">
+                    <img src="./Assets/peepermint-removebg-preview.png" alt="">
+                </div>
+                <div class="imgData">
+                    <h2>Peppermint</h2>
+                    <P>Known for relieving digestive issues and soothing headaches due to its cooling effect.</P>
+                </div>
+                <a href="#">Buy now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <div class="remedies" id="Remedies">
+        <h1 >REMEDIES</h1>
+        <div class="diseases" >
+            <ul>
+                <li id="acidHerbs">
+                    <span>ACIDITY</span>
+                    <img src="./Assets/acidity.jpeg" >
+                    <a  href="# "><i class="fa-brands fa-pagelines"></i>Herbs</a>
+                </li>
+                <li id="acneHerbs">
+                    <span >ACNE</span>
+                    <img src="./Assets/acne1234.jpeg" alt="">
+                        <a href="#"><i class="fa-brands fa-pagelines"></i>Herbs</a>
+                </li>
+                <li id="anxietyHerbs">
+                    <span>ANXIETY</span>
+                    <img src="./Assets/anxietywomen.jpg" alt="">
+                        <a href="#"><i class="fa-brands fa-pagelines"></i>Herbs</a>
+                </li>
+                <li id="skinHerbs">
+                    <span>SKIN ALLERGY</span>
+                    <img src="./Assets/skinallergy.jpeg" alt="">
+                        <a href="#"><i class="fa-brands fa-pagelines"></i>Herbs</a>
+                </li>
+                <li id="anemiaHerbs">
+                    <span>ANEMIA</span>
+                    <img src="./Assets/anemia1234.jpg" alt="">
+                        <a href="#"><i class="fa-brands fa-pagelines"></i>Herbs</a>
+                </li>
+                <li id="agingHerbs">
+                    <span>AGING</span>
+                    <img src="./Assets/aging1234.jpeg" alt="">
+                        <a href="#"><i class="fa-brands fa-pagelines"></i>Herbs</a>
+                </li>
+            </ul>
+        <div class="diseasesDetail"></div>
+    </div>
+    
+    <h1>Team : Plantify</h1>
+    
+
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

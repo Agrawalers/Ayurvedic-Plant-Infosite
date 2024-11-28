@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.container{
+    width: 100%;
+    height: 75%;
+    background-color: #c4b8a2;
+    position: fixed;
+    z-index: -1;
+}
+.custom-polygon {
+    width: 100%;   /* Base width of the polygon */
+    height: 66vh;  /* Maximum height */
+    background-color: #788847; /* Background color */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 75%);
+    /* Points are: top-left (0% 20%), top-right (100% 10%), 
+       bottom-right (100% 100%), bottom-left (0% 100%) */
+}
+/* base code for nav */
+
+nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 70px;
+}
+nav .logo{
+    width: 60%;
+    padding-left: 120px;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+nav .logo img{
+    height: 90PX;
+    width: 25%;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 5px;
+
+}
+ /* nav h2{
+    font-size: 2rem;
+    color: rgba(255, 255, 255,0.7);
+ } */
+nav ul{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+nav ul li{
+    padding: 7px;
+    display: flex;
+    align-items: center;
+}
+nav ul li:hover{
+    border-bottom: 3px solid  rgba(255, 255, 255,1);
+}
+nav ul li:hover a{
+    color:rgba(255, 255, 255,1) ;
+    font-weight: 500;
+}
+nav ul li a{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255,0.8);
+    text-decoration: none;
+    font-weight: 500;
+}
+/* popup */
+button#btnId {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Popup styling */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    z-index: 10;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup button {
+    height: fit-content;
+    width: fit-content;
+    color: #F5F7F8;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
+
+/* section */
+section{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
+section .aboutContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:120px ;
+
+}
+section .aboutContainer .textHeader{
+    width: 100%;
+    height: 70%;
+}
+section .aboutContainer .textHeader h2{
+    color: rgba(255, 255, 255,0.8);
+    font-size: 3rem;
+    font-weight: 700;
+}
+section .aboutContainer .textHeader span{
+    color: rgba(255, 255, 255,0.7);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 20px;
+
+}
+
+section .aboutContainer .searchBox{
+    height: 15%;
+    width: 90%;
+    align-self: self-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+section .aboutContainer .searchBox input{
+    /* width: 100%;
+    height: 100%; */
+    flex: 1;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    padding-right: 20PX;
+    font-size: 1.2rem;
+}
+section .aboutContainer .searchBox button{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(120, 136, 71,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+section .aboutContainer .searchBox i{
+    height: 80%;
+    border-right: 2px solid rgba(0, 0, 0,0.2);
+    font-size: 1.3rem;
+    padding-right: 10px;
+    color: rgba(0, 0, 0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: c;
+}
+
+section  .baseImgcontainer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section  .baseImgcontainer img{
+    width: 50%;
+    
+    
+}
+
+/* main */
+main{
+    width: 100%;
+    height: 380px;
+    margin-top: 70px;
+    padding: 0 120px 0 120px;
+}
+main .slideContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main .slideContainer .slides{
+    width: 20%;
+    height: 100%;
+    background-color: #F5F7F8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray , inset -0px -0px 5px gray;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+main .slideContainer .slides .imgCntnr{
+    height: 50%;
+    width: 100%;
+}
+main .slideContainer .slides .imgCntnr img{
+    height: 100%;
+    width: 100%;
+}
+main .slideContainer .slides .imgData{
+    height: 30%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+main .slideContainer .slides .imgData h2{
+    border-bottom: 2px solid gray;
+    color: rgba(0, 0, 0,0.7);
+}
+main .slideContainer .slides .imgData  p{
+    margin-top: 10px;
+    color: rgba(0, 0, 0,0.7);
+}
+
+main .slideContainer .slides a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    height: fit-content;
+    align-self: flex-end;
+    margin: 20px 25px 20px ;
+    color: rgb(125, 125, 255);
+}
+/* remedies */
+.remedies{
+    margin-top: 150px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.remedies h1{
+    width: 100%;
+    height: fit-content;
+    padding: 5px 0 5px 0;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: #F5F7F8;
+    color: green ;
+    font-weight: 900;
+}
+
+.remedies .diseases{
+    margin-top: 20px;
+    width: 100%;
+    flex: 1;
+}
+.remedies .diseases ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.remedies .diseases ul li{
+    width: 30%;
+    height: fit-content;
+    margin-bottom: 20px;
+    background-color: #F5F7F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px forestgreen , inset 0 0 5px gray;
+    cursor: pointer;
+}
+.remedies .diseases ul li span{
+    margin: 15px;
+    text-align: center;
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: green;
+    color: #F5F7F8;
+}
+.remedies .diseases ul li img{
+    height: 180px;
+}
+.remedies .diseases ul li a{
+    margin: 15px;
+    height: fit-content;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    background-color: green;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 2px gray , inset 0 0 5px gray;
+    cursor: pointer;
+}
+.remedies .diseases ul li a i{
+    margin-right: 10px;
+}
+
+/* 3dvirtualGranden */
+.virtualGranden{
+    width: 100%;
+    height: fit-content;
+}
+.virtualGranden h1{
+    font-size: 2rem;
+    background-color: green;
+    color: #F5F7F8;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+.virtualGranden marquee{
+    margin-top: 40px;
+    padding: 5px;
+    width: 100%;
+    color: #F5F7F8;
+    font-size: 1.5rem;
+    font-weight: 700    ;
+    padding-left: 40px;
+    background-color: rgb(9, 76, 12);
+}
+.virtualGranden video{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 600px;
+}
+
+/* footer */

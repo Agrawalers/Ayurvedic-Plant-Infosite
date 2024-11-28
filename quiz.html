@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<h1>Plant Certification Quiz</h1>
+
+<div class="quixbox">
+    <!-- Left Quiz Box -->
+    <div class="quizbox" id="leftQuizbox">
+        <form id="quiz-form-left">
+            <!-- Question 1 -->
+            <div class="quiz-question">
+                <p>1. What is the primary benefit of using Echinacea?</p>
+                <label><input type="radio" name="q1" value="1"> Boosts immune system</label><br>
+                <label><input type="radio" name="q1" value="0"> Improves digestion</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-question">
+                <p>2. How does peppermint aid in digestion?</p>
+                <label><input type="radio" name="q2" value="1"> Reduces bloating and gas</label><br>
+                <label><input type="radio" name="q2" value="0"> Increases appetite</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-question">
+                <p>3. What are the uses of turmeric in traditional medicine?</p>
+                <label><input type="radio" name="q3" value="1"> Reduces inflammation</label><br>
+                <label><input type="radio" name="q3" value="0"> Improves sleep quality</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-question">
+                <p>4. Which plant is known for its anti-inflammatory properties?</p>
+                <label><input type="radio" name="q4" value="1"> Ginger</label><br>
+                <label><input type="radio" name="q4" value="0"> Lavender</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="quiz-question">
+                <p>5. How can chamomile help with sleep disorders?</p>
+                <label><input type="radio" name="q5" value="1"> Induces drowsiness</label><br>
+                <label><input type="radio" name="q5" value="0"> Boosts mood</label>
+            </div>
+        </form>
+    </div>
+
+    <!-- Right Quiz Box -->
+    <div class="quizbox" id="rightQuizbox">
+        <form id="quiz-form-right">
+            <!-- Question 6 -->
+            <div class="quiz-question">
+                <p>6. Which herb is often used for reducing stress?</p>
+                <label><input type="radio" name="q6" value="1"> Ashwagandha</label><br>
+                <label><input type="radio" name="q6" value="0"> Basil</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="quiz-question">
+                <p>7. Which herb is known for improving brain function?</p>
+                <label><input type="radio" name="q7" value="1"> Ginkgo biloba</label><br>
+                <label><input type="radio" name="q7" value="0"> Peppermint</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="quiz-question">
+                <p>8. Which herb is widely used for skin care?</p>
+                <label><input type="radio" name="q8" value="1"> Aloe vera</label><br>
+                <label><input type="radio" name="q8" value="0"> Basil</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="quiz-question">
+                <p>9. Which plant is used as a natural remedy for headaches?</p>
+                <label><input type="radio" name="q9" value="1"> Peppermint</label><br>
+                <label><input type="radio" name="q9" value="0"> Chamomile</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="quiz-question">
+                <p>10. Which plant is commonly used for reducing anxiety?</p>
+                <label><input type="radio" name="q10" value="1"> Lavender</label><br>
+                <label><input type="radio" name="q10" value="0"> Peppermint</label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Submit Button -->
+<button onclick="calculateScore()">Submit</button>
+
+<!-- Overlay and Popup -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+    <h2>Quiz Result</h2>
+    <p id="result-text"></p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

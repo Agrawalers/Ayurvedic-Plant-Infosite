@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* base code */
+section{
+    width: 100%;
+    height: fit-content;
+}
+section h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #f5f5f5;
+    background-color: green;
+    padding: 5px;
+
+}
+section .imgClassification{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+section .imgClassification .imgbox{
+    width: 40%;
+}
+section .imgClassification .imgbox img{
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 0 5px green , inset 0 0 5px green;
+    padding: 10px;
+}
+section .imgClassification .classificatonbox{
+    width: 55%;
+
+}
+section .imgClassification .classificatonbox h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    height: fit-content;
+    padding: 3px;
+    background-color: green;
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+section .imgClassification .classificatonbox ol{
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px green , inset 0 0 5px green;
+}
+section .imgClassification .classificatonbox ol li{
+    padding: 10px;
+    width: 50%;
+    height: 50px;
+    font-size: 1.2rem;
+}
+section .imgClassification .classificatonbox ol li b{
+    margin-right: 10px;
+}
+/* description */
+section .extraData{
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+section .extraData .description{
+    width: 100%;
+    height: fit-content;
+}
+section .extraData .description h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    height: fit-content;
+    padding: 3px;
+    background-color: green;
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+section .extraData .description p{
+    height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 5px green , inset 0 0 5px green;
+}
+section .extraData .properties{
+    width: 100%;
+}
+section .extraData .properties h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    height: fit-content;
+    padding: 3px;
+    background-color: green;
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+section .extraData .properties p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0 0 5px green , inset 0 0 5px green;
+}
+/* precuation */
+section .precuation{
+    width: 100%;
+}
+section .precuation h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    height: fit-content;
+    padding: 3px;
+    background-color: green;
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+section .precuation p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0 0 5px green , inset 0 0 5px green;
+}
